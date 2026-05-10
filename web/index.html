@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demana la teva cita</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body id="grid-container">
+    <header id="container-header">
+        <h1 id="titulo">Taller Mecànic</h1>
+        <p>Demana la teva cita en menys d'un minut</p>
+    </header>
+
+    <main id="container-form">
+        <form id="citaForm">
+
+            <div class="inputForm"> 
+                <p class="letra">ID Vehiculo</p>
+                <input type="text" id="vehicle_id" placeholder="ID del vehicle" required>
+            </div>
+            
+            <div class="inputForm">
+                <p class="letra">Data desitjada</p>
+                <input type="date" id="data_cita" required>
+            </div>
+            
+            <div class="inputForm">
+                <p class="letra">Servei que necessites</p>
+                <input type="text" id="servei_sollicitat" placeholder="Servei sol·licitat" required>
+            </div>
+            
+            <button id="submitButton" type="submit">Enviar sol·licitud</button>
+        </form>
+    </main>
+
+    <footer id="container-footer">
+        <p>Aquesta pagina web esta feta per Izan Barrasa i Marti Pino</p>
+    </footer>
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
